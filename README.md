@@ -1,16 +1,15 @@
-# Data descriptor for:
-### Losses and gains of Earth's tidal wetlands (2021)
+# Data descriptor for: Murray global tidal wetland change (2022)
 
 #### File description:
 
-This data descriptor describes the Global Intertidal Change data products associated with the paper Losses and gains of Earth's tidal wetlands (in review). The principal data product is a set of change maps, consisting of 6 raster bands split into single images for publication:
+This data descriptor describes the Global Intertidal Change data products associated with the paper High-resolution mapping of losses and gains of Earth's tidal wetlands (2022) *Science*. The principal data product is a set of change maps, consisting of 6 raster bands split into single images for publication:
 
 * `"loss", 0-1` - integer representing loss (1).
-* `"lossYear", 01:19, 3` - integer representing year of analysis (eg., 19 == 2019).
-* `"lossType, 2,3,5` - integer representing intertidal ecosystem type (Tidal Flat (2), Mangrove (3), Saltmarsh (5)).
+* `"lossYear", 01:19, 3` - integer representing the end year of the time-step of analysis (e.g., 19 = 2017-2019).
+* `"lossType, 2,3,5` - integer representing intertidal ecosystem type: Tidal flat (2), Mangrove (3), Tidal marsh (5)).
 * `"gain", 0-1` - integer representing gain (1).
-* `"gainYear",  01:19, 3`  - integer representing time step end year of analysis (eg., 01 == 1999-2001, 19 == 2017-2019).
-* `"gainType", 2,3,5` - integer representing intertidal ecosystem type (Tidal Flat (2), Mangrove (3), Saltmarsh (5)).
+* `"gainYear",  01:19, 3`  - integer representing the end year of the time-step of analysis (e.g., 19 = 2017-2019).
+* `"gainType", 2,3,5` - integer representing intertidal ecosystem type: Tidal flat (2), Mangrove (3), Tidal marsh (5)).
 
 In addition, we provide two tidal wetland extent images:
 
@@ -27,7 +26,9 @@ Training data used to develop the extent product is available at DOI: 10.6084/m9
 Use of any aspect of this study requires full attribution (see licence). 
 
 Please cite the published paper:
-Murray et al. (in submission) Losses and gains of Earth's tidal wetlands.
+
+Murray, N.J., Worthington, T.A., Bunting, P., Duce, S., Hagger, V., Lovelock, C.E., Lucas, R., Saunders, M.I., Sheaves, M., Spalding, M., Waltham, N.J., Lyons, M.B., 2022. High-resolution mapping of losses and gains of Earth's tidal wetlands. *Science*. [paper link](https://doi.org/10.1126/science.abm9583)
+
 
 #### User notes and caveates
 There are several important considerations about the use of these data products, including:
@@ -41,21 +42,12 @@ There are several important considerations about the use of these data products,
 #### Data
 The datasets generated for this study area available for viewing at the Global Intertidal Change website (http://www.globalintertidalchange.org). 
 
-For analysis, they are made directly available in Google Earth Engine with the following assetIDs:
-
-* `projects/UQ_intertidal/global_intertidal_v2_0/outputs/gic_v2_0/gic_archive_2019_v1_0_0/murray_gic_v1_0_0_loss`
-* `projects/UQ_intertidal/global_intertidal_v2_0/outputs/gic_v2_0/gic_archive_2019_v1_0_0/murray_gic_v1_0_0_lossYear`
-* `projects/UQ_intertidal/global_intertidal_v2_0/outputs/gic_v2_0/gic_archive_2019_v1_0_0/murray_gic_v1_0_0_lossType`
-* `projects/UQ_intertidal/global_intertidal_v2_0/outputs/gic_v2_0/gic_archive_2019_v1_0_0/murray_gic_v1_0_0_gain`
-* `projects/UQ_intertidal/global_intertidal_v2_0/outputs/gic_v2_0/gic_archive_2019_v1_0_0/murray_gic_v1_0_0_gainYear`
-* `projects/UQ_intertidal/global_intertidal_v2_0/outputs/gic_v2_0/gic_archive_2019_v1_0_0/murray_gic_v1_0_0_gainType`
-* `projects/UQ_intertidal/global_intertidal_v2_0/outputs/gic_v2_0/gic_archive_2019_v1_0_0/murray_gic_v1_0_0_twprobability_2001`
-* `projects/UQ_intertidal/global_intertidal_v2_0/outputs/gic_v2_0/gic_archive_2019_v1_0_0/murray_gic_v1_0_0_twprobability_2019`
+For analysis, they are made directly available in the Google Earth Engine data catalogue (Murray Global Tidal Wetland Change). 
 
 The dataset are also available as shards from GCP Cloud Storage and can be downloaded using the `gsutil` command  `gsutil -m cp "gs://gic_exports/gic-2019-v1-0/*.tif" "PATH-TO-LOCAL-FOLDER"`
 
 #### Licence
-These data products are licensed under a Creative Commons Attribution-Non Commercial 4.0 International License. [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
+These data products are licensed under a Creative Commons Attribution 4.0 International License. [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)
 
 #### Further information:
-For any further information about this project, code or data please contact nicholas.murray@jcu.edu.au.
+For any further information about this project, code or data please follow the Global Intertidal Change website (http://www.globalintertidalchange.org) or contact nicholas.murray@jcu.edu.au.
