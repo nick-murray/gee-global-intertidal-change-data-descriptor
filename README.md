@@ -18,9 +18,11 @@ In addition, we provide two tidal wetland extent images:
 
 A full description of the methods, validation, and limitations of the data produced by this software is available in the published paper. For project updates,  frequently asked questions, and Google Earth Engine code examples please refer to the [project website](https://www.globalintertidalchange.org/). 
 
-Code to develop the 6 band change product and two extent bands are available at DOI: 10.5281/zenodo.5968865 
+Code to develop the 6 band change product and two extent bands are available at DOI: 
+N. Murray et al., Code for high-resolution mapping of losses and gains of Earth's tidal wetlands v1.0.0 Zenodo (2022) https://doi.org/10.5281/zenodo.5968865
 
-Training data used to develop the extent product is available at DOI: 10.6084/m9.figshare.19121660
+Training data used to develop the extent product is available at DOI: 
+N. Murray et al. Intertidal ecosystem training data for mapping Earth's tidal wetlands. Figshare (2022) https://doi.org/10.6084/m9.figshare.19121660
 
 #### Citation
 Use of any aspect of this study requires full attribution (see licence). 
