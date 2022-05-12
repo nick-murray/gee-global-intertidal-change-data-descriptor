@@ -1,4 +1,12 @@
-# Data descriptor for: Murray global tidal wetland change (2022)
+# Data descriptor for: Murray Global Tidal Wetland Change v1.0 (2022)
+
+
+#### Citation
+Use of any aspect of this study requires full attribution (see licence). 
+
+Please cite the published paper:
+
+Murray, N.J., Worthington, T.A., Bunting, P., Duce, S., Hagger, V., Lovelock, C.E., Lucas, R., Saunders, M.I., Sheaves, M., Spalding, M., Waltham, N.J., Lyons, M.B., 2022. High-resolution mapping of losses and gains of Earth's tidal wetlands. *Science*. 376, 744-749. https://doi.org/10.1126/science.abm9583
 
 #### File description:
 
@@ -24,28 +32,28 @@ N. Murray et al., Code for high-resolution mapping of losses and gains of Earth'
 Training data used to develop the extent product is available at DOI: 
 N. Murray et al. Intertidal ecosystem training data for mapping Earth's tidal wetlands. Figshare (2022) https://doi.org/10.6084/m9.figshare.19121660
 
-#### Citation
-Use of any aspect of this study requires full attribution (see licence). 
-
-Please cite the published paper:
-
-Murray, N.J., Worthington, T.A., Bunting, P., Duce, S., Hagger, V., Lovelock, C.E., Lucas, R., Saunders, M.I., Sheaves, M., Spalding, M., Waltham, N.J., Lyons, M.B., 2022. High-resolution mapping of losses and gains of Earth's tidal wetlands. *Science*. [paper link](https://doi.org/10.1126/science.abm9583)
-
-
 #### User notes and caveates
-There are several important considerations about the use of these data products, including:
 
-* The data products only cover the area between 60 degrees North and 60 degrees south. Refer to the extent of the tidal wetland probability analysis for the full analysis extent.
-* Although the models developed to predict the distribution and change of tidal wetland extent and their component ecosystems, like all remotely sensed datasets there are unavoidable ommission and commission errors. These are described in detail and quantified in the published paper. We recommend any use of the data propagates the errors associated with map uncertainty through any downstream analyses.
-* The datasets were developed with careful consideration of the definitions of loss and gain and the scale at which the definitions apply. Please refer to the published paper to best understand what is represented in these data products.
+The high-resolution maps of losses and gains of Earth's tidal wetlands have several known limitations (including commission and omission errors) that are characterised and discussed in detail in the supplementary material of [Murray et al. (2022)](https://doi.org/10.1126/science.abm9583). 
+
+We note three key issues here:
+
+* Any downstream use of these maps should account for data uncertainty and propagate them throughout analyses. Responsible use of spatial data requires propagating known uncertainties, and thus area estimations should not be made directly from the map datasets without reporting associated uncertainty estimates. Many methods are available for this, including probability-sample based (Olofsson et al, 2014) and resample-based (Lyons et al 2018) quantitative approaches. Please refer to supplementary material of Murray et al. (2022) for further information on the source of known uncertainties and the impact they have on the area estimates derived from this product.
+
+* The global intertidal change maps were developed with training data that met strict definitions of intertidal ecosystem type and change (loss, gain and no change) for use at a specific spatial scale. These definitions may not suit the specific needs of other coastal ecosystem monitoring or conservation studies, and we therefore recommend all users to familiarise themselves with the definitions used to develop these maps, as well as the definitions of loss, gain and no change. 
+
 * A minimum mapping unit is applied to the data, please refer to the published paper.
-* Please contact the corresponding author of the published paper to request any additional data from the study (such as probability layers for the years between t1 and t7)
+
+Analyses of these map data should therefore only be conducted with a detailed understanding of appropriate use of the data and careful consideration of uncertainty.
+
 
 Please see the usage notes on the the Global Intertidal Change website (http://www.globalintertidalchange.org) for further information. 
+
 #### Data
 The data generated for this study area available for viewing at the Global Intertidal Change website (http://www.globalintertidalchange.org). 
 
-For analysis, they are made directly available in the Google Earth Engine data catalogue (Murray Global Tidal Wetland Change v1.0 (1999-2019)). 
+For analysis, they are made directly available in the Google Earth Engine data catalogue: [Murray Global Tidal Wetland Change v1.0 (1999-2019)](https://developers.google.com/earth-engine/datasets/catalog/JCU_Murray_GIC_global_tidal_wetland_change_2019) using the following code snippet.
+`ee.ImageCollection("JCU/Murray/GIC/global_tidal_wetland_change/2019")` 
 
 The data are also available as shards from GCP Cloud Storage and can be downloaded using the `gsutil` command  `gsutil -m cp "gs://gic_exports/gic-2019-v1-0/*.tif" "PATH-TO-LOCAL-FOLDER"`
 
