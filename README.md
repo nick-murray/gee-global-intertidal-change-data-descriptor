@@ -4,17 +4,17 @@
 
 This data descriptor describes the Global Intertidal Change data products associated with the paper High-resolution mapping of losses and gains of Earth's tidal wetlands (2022) *Science*. The principal data product is a set of change maps, consisting of 6 raster bands split into single images for publication:
 
-* `"loss", 0-1` - integer representing loss (1).
+* `"loss", 0-1` - set to 1 for loss locations.
 * `"lossYear", 01:19, 3` - integer representing the end year of the time-step of analysis (e.g., 19 = 2017-2019).
 * `"lossType, 2,3,5` - integer representing intertidal ecosystem type: Tidal flat (2), Mangrove (3), Tidal marsh (5)).
-* `"gain", 0-1` - integer representing gain (1).
+* `"gain", 0-1` - set to 1 for gain locations.
 * `"gainYear",  01:19, 3`  - integer representing the end year of the time-step of analysis (e.g., 19 = 2017-2019).
 * `"gainType", 2,3,5` - integer representing intertidal ecosystem type: Tidal flat (2), Mangrove (3), Tidal marsh (5)).
 
-In addition, we provide two tidal wetland extent images:
+In addition, we provide two images that represent estimated tidal wetland extent:
 
-* `gic_s1_probability, 0-100` - integer which represents the agreement of random forest decision trees for the tidal wetland class in t1 of the analysis, 2001 
-* `gic_s1_probability, 0-100` - integer which represents the agreement of random forest decision trees for the tidal wetland class in t7 of the analysis, 2019 
+* `twprobabilityStart, 0-100` - integer which represents the agreement of random forest decision trees for the tidal wetland class in t1 of the analysis, 2001 
+* `twprobabilityEnd, 0-100` - integer which represents the agreement of random forest decision trees for the tidal wetland class in t7 of the analysis, 2019 
 
 A full description of the methods, validation, and limitations of the data produced by this software is available in the published paper. For project updates,  frequently asked questions, and Google Earth Engine code examples please refer to the [project website](https://www.globalintertidalchange.org/). 
 
@@ -41,12 +41,13 @@ There are several important considerations about the use of these data products,
 * A minimum mapping unit is applied to the data, please refer to the published paper.
 * Please contact the corresponding author of the published paper to request any additional data from the study (such as probability layers for the years between t1 and t7)
 
+Please see the usage notes on the the Global Intertidal Change website (http://www.globalintertidalchange.org) for further information. 
 #### Data
-The datasets generated for this study area available for viewing at the Global Intertidal Change website (http://www.globalintertidalchange.org). 
+The data generated for this study area available for viewing at the Global Intertidal Change website (http://www.globalintertidalchange.org). 
 
-For analysis, they are made directly available in the Google Earth Engine data catalogue (Murray Global Tidal Wetland Change). 
+For analysis, they are made directly available in the Google Earth Engine data catalogue (Murray Global Tidal Wetland Change v1.0 (1999-2019)). 
 
-The dataset are also available as shards from GCP Cloud Storage and can be downloaded using the `gsutil` command  `gsutil -m cp "gs://gic_exports/gic-2019-v1-0/*.tif" "PATH-TO-LOCAL-FOLDER"`
+The data are also available as shards from GCP Cloud Storage and can be downloaded using the `gsutil` command  `gsutil -m cp "gs://gic_exports/gic-2019-v1-0/*.tif" "PATH-TO-LOCAL-FOLDER"`
 
 #### Licence
 These data products are licensed under a Creative Commons Attribution 4.0 International License. [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)
