@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6503080.svg)](https://doi.org/10.5281/zenodo.6503080)
+
 # Data descriptor for: Murray Global Tidal Wetland Change v1.0 (2022)
 
 
