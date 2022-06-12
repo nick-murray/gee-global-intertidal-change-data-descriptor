@@ -55,7 +55,7 @@ The data generated for this study area available for viewing at the Global Inter
 For analysis, they are made directly available in the Google Earth Engine data catalogue: [Murray Global Tidal Wetland Change v1.0 (1999-2019)](https://developers.google.com/earth-engine/datasets/catalog/JCU_Murray_GIC_global_tidal_wetland_change_2019) using the following code snippet.
 `ee.ImageCollection("JCU/Murray/GIC/global_tidal_wetland_change/2019")` 
 
-The data are also available as shards from GCP Cloud Storage and can be downloaded using the `gsutil` command  `gsutil -m cp "gs://gic_exports/gic-2019-v1-0/*.tif" "PATH-TO-LOCAL-FOLDER"`
+The data are also available as shards from GCP Cloud Storage and can be downloaded using the `gsutil` command  `gsutil -m cp "gs://gic_exports/gic-2019-v1-0/v1-0-1/*.tif" "PATH-TO-LOCAL-FOLDER"`
 
 #### Licence
 These data products are licensed under a Creative Commons Attribution 4.0 International License. [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)
